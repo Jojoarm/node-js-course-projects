@@ -2,15 +2,6 @@ const express = require('express');
 
 const app = express();
 
-// app.use((req, res, next) => {
-//     console.log('In the first Middleware!');
-//     next()
-// })
-
-// app.use((req, res, next) => {
-//     console.log('In the second Middleware!');
-//     res.send('<h1>The Express test page!</h1>')
-// })
 
 app.use('/users', (req, res, next) => {
     console.log('In the users Middleware!');
